@@ -119,6 +119,12 @@ header {
 }
 
 .icon {
+	fill: var(--icon-color);
+}
+
+.icon:hover {
+	fill: var(--icon-color);
+	fill: var(--link-color);
 }
 
 .link-contact svg {
@@ -133,8 +139,8 @@ header {
 
 .link-contact a:hover,
 .link-contact a:focus,
-a svg:hover,
-a svg:focus {
+.link-contact svg:hover,
+.link-contact svg:focus {
 	color: var(--link-color);
 	fill: var(--link-color);
 }
