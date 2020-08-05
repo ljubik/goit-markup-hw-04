@@ -18,6 +18,7 @@ font-family: 'Roboto', sans-serif; */
 :root {
 	--dark-color: #212121;
 	--body-color: #757575;
+	--icon-color: #afb1b8;
 	--link-color: #2196f3;
 	--light-color: #ffffff;
 	--footer-bgcolor: #2f303a;
@@ -116,17 +117,35 @@ header {
 	padding-bottom: 32px;
 	flex-direction: row;
 }
+
+.icon {
+}
+
+.link-contact svg {
+	width: 16px;
+	height: 12px;
+	align-items: baseline;
+}
+
 .link-contact a {
 	color: var(--body-color);
 }
 
-.link-contact a::before {
+.link-contact a:hover,
+.link-contact a:focus,
+a svg:hover,
+a svg:focus {
+	color: var(--link-color);
+	fill: var(--link-color);
+}
+
+/* .link-contact a::before {
 	content: " ";
 	display: block;
 	margin-right: 16px;
 	background-image: url(../images/icon_mail_hover.svg);
 	background-repeat: no-repeat;
-}
+} */
 
 .item {
 	margin-right: 50px;
