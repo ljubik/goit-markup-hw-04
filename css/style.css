@@ -120,18 +120,25 @@ header {
 	color: var(--body-color);
 }
 
+.link-contact a::before {
+	content: " ";
+	display: block;
+	margin-right: 16px;
+	background-image: url(../images/icon_mail_hover.svg);
+	background-repeat: no-repeat;
+}
+
 .item {
 	margin-right: 50px;
 }
 
 .hero {
-	/* height: 600px; */
-	padding-bottom: 94px;
-	padding-top: 94px;
-	background: rgba(47, 48, 58, 0.8);
-	/* background-image: url(../images/Header_img.png); */
+	padding-bottom: 200px;
+	padding-top: 200px;
+	/* background: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)); */
+	background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header_img_opt.png);
+	max-width: 1600px;
 	display: flex;
-	/* flex-direction: column; */
 	align-items: center;
 	justify-content: center;
 	margin: 0 auto;
@@ -159,7 +166,6 @@ header {
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
-	/* padding-top: 200px; */
 	padding-bottom: 30px;
 }
 
@@ -176,7 +182,6 @@ header {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	background: var(--link-color);
 	width: 200px;
-	/* margin-bottom: 210px; */
 	padding: 10px;
 	justify-content: center;
 }
@@ -235,7 +240,7 @@ header {
 
 .img {
 	border-style: none;
-	display: block; /* для прибирання пропусків псля інлайн компонентів */
+	display: block; /* для прибирання пропусків пiсля інлайн компонентів */
 }
 
 .rectangle1-img {
@@ -311,7 +316,6 @@ header {
 
 .team-item {
 	display: flex;
-	/* margin-bottom: 94px; */
 	margin-left: 10px;
 	margin-right: 10px;
 }
@@ -327,7 +331,6 @@ header {
 	color: var(--dark-color);
 	text-align: center;
 	letter-spacing: 0.03em;
-	/* margin-top: 94px; */
 	margin-bottom: 50px;
 }
 
@@ -390,7 +393,6 @@ header {
 .clients {
 	letter-spacing: 0.03em;
 	padding-top: 94px;
-	/* padding-bottom: 94px; */
 }
 
 .clients-cont {
@@ -418,7 +420,7 @@ header {
 }
 
 .clients-card img {
-	/* Центрування в блоці ає бути в батьківському position: relative */
+	/* Центрування в блоці має бути в батьківському position: relative */
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -447,7 +449,6 @@ footer {
 .foot-list {
 	display: flex;
 	flex-wrap: nowrap;
-
 	/*width: calc((100% - 30px * 2) / 3); */
 }
 
@@ -542,10 +543,6 @@ form {
 .btn-gal-group {
 	display: flex;
 	justify-content: center;
-	/* padding-left: 30px;
-	padding-right: 30px; */
-	/* padding-top: 174px; */
-	/* padding-bottom: 40px; */
 }
 
 .btn {
@@ -569,7 +566,6 @@ form {
 	line-height: 1.625;
 	letter-spacing: 0.03em;
 	color: var(--dark-color);
-	/* padding: 20px; */
 	padding-left: 22px;
 	padding-right: 22px;
 	padding-top: 6px;
@@ -582,15 +578,11 @@ form {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	/* margin-top: 50px; */
-	/* padding-top: 50px; */
 }
 
 .gal-item {
 	width: calc((100% - 30px * 2) / 3);
-	/* align-items: center; */
 	margin-bottom: 30px;
-	/* padding: 1px; */
 }
 
 .card-gallery {
@@ -598,16 +590,13 @@ form {
 	border: 1px solid #eeeeee;
 	box-sizing: border-box;
 	box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
-
 	border-radius: 0px 0px 4px 4px;
 	display: flex;
 	flex-wrap: wrap;
-	/* align-items: baseline; */
 }
 
 .gal-card-info {
 	flex-wrap: wrap;
-
 	padding-left: 20px;
 }
 
@@ -631,6 +620,5 @@ form {
 
 .gallery-txt {
 	display: flex;
-
 	color: var(--light-color);
 }
