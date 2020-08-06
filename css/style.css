@@ -361,7 +361,7 @@ header {
 	color: var(--dark-color);
 	text-align: center;
 	letter-spacing: 0.03em;
-	margin-bottom: 50px;
+	padding-bottom: 50px;
 }
 
 .card {
@@ -385,11 +385,10 @@ header {
 .social-link {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	width: 44px;
 	height: 44px;
-	/* background: var(--light-color); */
 	border-radius: 50%;
-	align-items: center;
 }
 
 .social {
@@ -444,6 +443,7 @@ header {
 .clients {
 	letter-spacing: 0.03em;
 	padding-top: 94px;
+	padding-bottom: 94px;
 }
 
 .clients-cont {
@@ -454,35 +454,39 @@ header {
 .clients-list {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 94px;
 }
 
 .clients-card {
-	width: 170px;
-	height: 90px;
-	border: 1px solid #afb1b8;
-	box-sizing: border-box;
-	border-radius: 4px;
-	position: relative; /* Для центрування */
 	display: flex;
 	flex-direction: row;
 	margin-left: 10px;
 	margin-right: 10px;
+	justify-content: center;
+	align-items: center;
 }
 
-.clients-card img {
-	/* Центрування в блоці має бути в батьківському position: relative */
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, -50%);
+.link-clients {
+	display: flex;
+	width: 170px;
+	height: 90px;
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+	vertical-align: middle;
+	justify-content: center;
+	align-items: center;
 }
 
-.clients-card:hover,
-.clients-card:focus {
-	color: var(--link-color);
+.clients-logo svg {
+	display: flex;
+	width: 40px;
+	height: 40px;
+	justify-content: center;
+}
+
+.link-clients:hover,
+.link-clients:focus {
 	border: 1px solid var(--link-color);
+	--icon-color: var(--link-color);
 }
 
 footer {
