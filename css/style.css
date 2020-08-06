@@ -399,6 +399,7 @@ header {
 	height: 44px;
 	background: var(--light-color);
 	border-radius: 50%;
+	align-items: center;
 
 }
 
@@ -435,8 +436,10 @@ header {
 }
 
 .team-card svg {
+	display: flex;
 	width: 20px;
 	height: 20px;
+	justify-content: center;
 }
 
 .team-card a:hover,
