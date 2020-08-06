@@ -10,6 +10,7 @@ html {
 	padding: 0;
 	/*outline: 2px solid blue;*/
 }
+
 /* *[ Index page style ]* */
 
 /* font-family: 'Raleway', sans-serif;
@@ -49,6 +50,9 @@ a:hover,
 a:focus {
 	color: var(--link-color);
 	fill: var(--link-color);
+}
+
+.link {
 }
 
 header {
@@ -123,12 +127,6 @@ header {
 	fill: var(--icon-color);
 }
 
-/* .icon:hover {
-	/* fill: var(--icon-color); */
-	fill: var(--link-color);
-	border: 1px solid var(--link-color);
-} */
-
 .link-contact svg {
 	width: 16px;
 	height: 12px;
@@ -140,9 +138,9 @@ header {
 	fill: var(--link-color);
 }
 
-.link-contact svg {
-	width: 16px;
-	height: 12px;
+.link .svg {
+	display: inline;
+	vertical-align: middle;
 }
 
 .link-contact a:hover,
@@ -150,16 +148,8 @@ header {
 .link-contact svg:hover,
 .link-contact svg:focus {
 	color: var(--link-color);
-	--icon-color :var(--link-color);
+	--icon-color: var(--link-color);
 }
-
-/* .link-contact a::before {
-	content: " ";
-	display: block;
-	margin-right: 16px;
-	background-image: url(../images/icon_mail_hover.svg);
-	background-repeat: no-repeat;
-} */
 
 .item {
 	margin-right: 50px;
@@ -168,7 +158,6 @@ header {
 .hero {
 	padding-bottom: 200px;
 	padding-top: 200px;
-	/* background: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)); */
 	background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header_img_opt.png);
 	max-width: 1600px;
 	display: flex;
@@ -323,6 +312,7 @@ header {
 
 .we-do-fig figcaption {
 	font-size: 14px;
+	display: none;
 	line-height: 1.143;
 	text-transform: uppercase;
 	text-align: center;
@@ -397,10 +387,9 @@ header {
 	justify-content: center;
 	width: 44px;
 	height: 44px;
-	background: var(--light-color);
+	/* background: var(--light-color); */
 	border-radius: 50%;
 	align-items: center;
-
 }
 
 .social {
@@ -446,9 +435,8 @@ header {
 .team-card a:focus,
 .social-link:hover,
 .social-link:focus {
-
 	color: var(--link-color);
-	--icon-color :var(--light-color);
+	--icon-color: var(--light-color);
 	background: var(--link-color);
 	border-radius: 50%;
 }
@@ -588,6 +576,14 @@ form {
 	padding-right: 62px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+
+.btn-subscribe::after {
+	content: " ";
+	display: block;
+	margin-right: 16px;
+	background-image: url(../images/icon_mail_hover.svg);
+	background-repeat: no-repeat;
 }
 
 /* *[ Portfolio page style ]* */

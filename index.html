@@ -32,18 +32,18 @@
 					</ul>
 					<ul class="link-contact list">
 						<li class="item">
-							<a href="mailto:info@devstudio.com">
+							<a href="mailto:info@devstudio.com" class="link">
 								<svg class="icon">
-									<use xlink:href="./images/sprite.svg#icon_mail"></use>
+									<use xlink:href="./images/sprite.svg#icon_mail" weight="16" height="12"></use>
 								  </svg>
 								
 								info@devstudio.com
 							</a>
 						</li>
 						<li class="item">
-							<a href="tel:+380961111111">
+							<a href="tel:+380961111111" class="link">
 								<svg class="icon">
-									<use xlink:href="./images/sprite.svg#icon_mobile"></use>
+									<use xlink:href="./images/sprite.svg#icon_mobile" weight="10" height="16"></use>
 								  </svg>
 			
 								+38 096 111 11 11
@@ -468,24 +468,38 @@
 							<h4>Присоединяйтесь</h4>
 							<div class="social">
 								<ul class="team-list list">
-									<li class="team-card">
-										<a href="https://instagram.com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-											<img src="./images/instagram.png" class="social" alt="Instagram" title="Instagram social link" />
+									<li class="team-card ">
+										<a 
+											href="https://instagram.com/"
+											class="social-link"
+											aria-label="Instagram"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+										<svg class="icon social" weight="20" height="20">
+											<use xlink:href="./images/sprite.svg#icon_instagram"></use>
+										</svg>
 										</a>
 									</li>
 									<li class="team-card">
-										<a href="https://twitter.com/" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
-											<img src="./images/twitter.png" class="social" alt="Twitter" title="Twitter social link" />
+										<a href="https://twitter.com/" class="social-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+											<svg class="icon social" weight="20" height="20">
+												<use xlink:href="./images/sprite.svg#icon_twitter"></use>
+											  </svg>
 										</a>
 									</li>
 									<li class="team-card">
-										<a href="https://facebook.com/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-											<img src="./images/facebook.png" class="social" alt="Facebook" title="Facebook social link" />
+										<a href="https://facebook.com/" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+											<svg class="icon social" weight="20" height="20">
+												<use xlink:href="./images/sprite.svg#icon_facebook"></use>
+											  </svg>
 										</a>
 									</li>
 									<li class="team-card">
-										<a href="https://linkedin.com/" aria-label="Linkedin" target="_blank" rel="noopener noreferrer">
-											<img src="./images/linkedin.png" class="social" alt="Linkedin" title="Linkedin social link" />
+										<a href="https://linkedin.com/" class="social-link" aria-label="Linkedin" target="_blank" rel="noopener noreferrer">
+											<svg class="icon social" weight="20" height="20">
+												<use xlink:href="./images/sprite.svg#icon_linkedin"></use>
+											  </svg>
 										</a>
 									</li>
 								</ul>
@@ -497,7 +511,6 @@
 								<input type="text" placeholder="e-mail" class="inpt-mail" name="usrname" />
 								<button class="btn-subscribe">
 									Подписаться
-									<img src="./images/icon_telegram.svg" alt="icon telegram" width="24" height="24" />
 								</button>
 							</form>
 						</li>
