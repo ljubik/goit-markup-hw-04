@@ -123,10 +123,11 @@ header {
 	fill: var(--icon-color);
 }
 
-.icon:hover {
-	fill: var(--icon-color);
+/* .icon:hover {
+	/* fill: var(--icon-color); */
 	fill: var(--link-color);
-}
+	border: 1px solid var(--link-color);
+} */
 
 .link-contact svg {
 	width: 16px;
@@ -136,6 +137,12 @@ header {
 
 .link-contact a {
 	color: var(--body-color);
+	fill: var(--link-color);
+}
+
+.link-contact svg {
+	width: 16px;
+	height: 12px;
 }
 
 .link-contact a:hover,
@@ -143,7 +150,7 @@ header {
 .link-contact svg:hover,
 .link-contact svg:focus {
 	color: var(--link-color);
-	fill: var(--link-color);
+	--icon-color :var(--link-color);
 }
 
 /* .link-contact a::before {
@@ -417,10 +424,18 @@ header {
 	margin-bottom: 30px;
 }
 
-.social:hover,
-.social:focus {
+.team-card svg {
+	width: 20px;
+	height: 20px;
+}
+
+.team-card a:hover,
+.team-card a:focus,
+.social svg:hover,
+.social svg:focus {
 	color: var(--link-color);
-	border: 1px solid var(--link-color);
+	fill: var(--link-color);
+	/* border: 1px solid var(--link-color); */
 }
 
 .clients {
