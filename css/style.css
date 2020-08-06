@@ -274,6 +274,12 @@ header {
 	justify-content: center;
 }
 
+.rectangle1-img .icon {
+	fill: var(--icon-color);
+	width: 65px;
+	height: 70px;
+}
+
 .rectangle1-txt {
 	display: flex;
 	flex-wrap: wrap;
