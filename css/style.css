@@ -392,6 +392,16 @@ header {
 	flex-direction: column;
 }
 
+.social-link {
+	display: flex;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	background: var(--light-color);
+	border-radius: 50%;
+
+}
+
 .social {
 	display: flex;
 	justify-content: center;
@@ -431,11 +441,13 @@ header {
 
 .team-card a:hover,
 .team-card a:focus,
-.social svg:hover,
-.social svg:focus {
+.social-link:hover,
+.social-link:focus {
+
 	color: var(--link-color);
-	fill: var(--link-color);
-	/* border: 1px solid var(--link-color); */
+	--icon-color :var(--light-color);
+	background: var(--link-color);
+	border-radius: 50%;
 }
 
 .clients {
