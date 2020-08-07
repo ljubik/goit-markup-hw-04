@@ -115,6 +115,7 @@ header {
 	padding-bottom: 32px;
 	font-size: 14px;
 	font-weight: 500;
+	letter-spacing: 0.02em;
 }
 
 .link-contact {
@@ -125,6 +126,7 @@ header {
 	flex-direction: row;
 	font-size: 14px;
 	font-weight: 500;
+	letter-spacing: 0.02em;
 }
 
 .icon {
