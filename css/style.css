@@ -129,6 +129,16 @@ header {
 	letter-spacing: 0.02em;
 }
 
+.link-contact .link {
+	display: flex;
+}
+
+.link-item {
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+}
+
 .icon {
 	fill: var(--icon-color);
 }
