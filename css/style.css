@@ -52,9 +52,6 @@ a:focus {
 	fill: var(--link-color);
 }
 
-.link {
-}
-
 header {
 	border: 1px solid #ececec;
 }
